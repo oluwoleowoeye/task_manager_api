@@ -41,5 +41,28 @@ uvicorn main:app --reload
 API Documentation
 Access the interactive docs at: http://localhost:8000/docs
 
+## Screenshots
 
+### 1. API Documentation
+![API Documentation](docs/api-docs.png)
 
+### 2. Running Server
+![Terminal showing running server](docs/running-server.png)
+
+## Database Structure
+
+### ER Diagram
+![Task Manager Database ERD](docs/erd.png)
+
+**Tables Shown:**
+1. `users` - Stores user account information
+   - Primary Key: `user_id`
+   - Unique fields: `username`, `email`
+
+2. `tasks` - Contains all task items
+   - Primary Key: `task_id`
+   - Foreign Key: `user_id` (links to users table)
+   - Status can be: pending, in_progress, or completed
+
+**Relationships:**
+- One user can have many tasks (1-to-many relationship)
