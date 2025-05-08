@@ -20,7 +20,7 @@ A RESTful CRUD API built with FastAPI and MySQL for managing tasks and users.
 1. Clone the repository:
    ```bash
    git clone https://github.com/oluwoleowoeye/task_manager_api.git
-   cd task-manager-api
+   cd task_manager_api
 
 2.  Set up virtual environment:
   python -m venv venv
